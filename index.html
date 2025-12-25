@@ -25,6 +25,7 @@
 </head>
 
 <body class="font-poppins">
+    <!-- first page  -->
     <header class="hidden">
         <div class="hero min-h-screen" style="background-image: url(images/PC\ Wallpaper.jpg);">
             <div class="hero-overlay"></div>
@@ -45,35 +46,248 @@
             </div>
         </div>
     </header>
+    <!-- second page  -->
 
     <main>
-<section>
-    <nav>
-        <ul class="menu bg-base-200 rounded-box w-56">
-  <li><a>Item 1</a></li>
-  <li>
-    <details open>
-      <summary>Parent</summary>
-      <ul>
-        <li><a>Submenu 1</a></li>
-        <li><a>Submenu 2</a></li>
-        <li>
-          <details open>
-            <summary>Parent</summary>
-            <ul>
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
-            </ul>
-          </details>
-        </li>
-      </ul>
-    </details>
-  </li>
-  <li><a>Item 3</a></li>
-</ul>
-    </nav>
-</section>
+        <!-- navbar start -->
+        <section>
+            <div class="navbar bg-emerald-800 shadow-sm">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                    </div>
+                    <a class="text-3xl font-extrabold pl-12 text-white">JERSICO</a>
+                </div>
+
+
+
+                <div class="navbar-center hidden lg:flex gap-5">
+                    <ul class="menu menu-horizontal px-1">
+                        <li>
+                            <details>
+                                <summary class="text-xl text-white">Club</summary>
+                                <ul class="p-2 bg-base-100   z-1 text-black">
+                                    <li><a>2025-26</a></li>
+                                    <li><a>2024-25</a></li>
+                                    <li><a>2023-24</a></li>
+                                    <li><a>2022-23</a></li>
+                                    <li><a>2021-22</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary class="text-xl text-white">National</summary>
+                                <ul class="p-2 bg-base-100  z-1 text-black">
+                                    <li><a>2025-26</a></li>
+                                    <li><a>2024-25</a></li>
+                                    <li><a>2023-24</a></li>
+                                    <li><a>2022-23</a></li>
+                                    <li><a>2021-22</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary class="text-xl text-white">Retro</summary>
+                                <ul class="p-2 bg-base-100  z-1 text-black">
+                                    <li><a>Barcelona 2014-2015</a></li>
+                                    <li><a>Barcelona 2011-2012</a></li>
+                                    <li><a>Barcelona 2010-2011</a></li>
+                                    <li><a>Barcelona 2009-2010</a></li>
+                                    <li><a>Barcelona 2008-2010</a></li>
+                                </ul>
+                            </details>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <!-- cart button  -->
+                <div class="navbar-end">
+
+                    <div>
+                        <div class="dropdown dropdown-end flex gap-5 px-12">
+                            <div tabindex="0" role="button" class="btn btn-ghost btn-circle text-white size-7ze">
+                                <div class="indicator">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                    </svg>
+                                    <span class="badge badge-sm indicator-item bg-purple-300 font-bold">8</span>
+                                </div>
+                            </div>
+                            <div tabindex="0"
+                                class="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
+                                <div class="card-body">
+                                    <span class="text-lg font-bold">8 Items</span>
+                                    <span class="text-info">Subtotal: $999</span>
+                                    <div class="card-actions">
+                                        <button class="btn btn-primary btn-block">View cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <a class="btn">Login</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- navbar end  -->
+
+            <!-- Product display  -->
+
+
+            <div class="container mx-auto mt-24">
+                <div class="mt-24 flex  flex-col items-center">
+                    <h2 class="text-4xl font-bold mb-5">Club Jersies</h2>
+                    <p class="text-xl mb-12">
+                        Get your favourite Club's Jersey in a very reasonable price and a trusted shop.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
+                    <!-- first -->
+                    <div class="card bg-base-100 shadow-sm">
+                        <figure>
+                            <img src="images/Barcelona.jpg" alt="Shoes" />
+                        </figure>
+                        <div class="card-body flex justify-center items-center">
+                            <h2 class="card-title text-2xl font-bold">Barcelona Home kit</h2>
+                            <p class="text-xl">950 Taka
+                            </p>
+                            <div class="">
+                                <button onclick="CartClick()" id="cart-button" class="btn btn-primary ">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second -->
+                    <div class="card bg-base-100 shadow-sm">
+                        <figure>
+                            <img src="images/Real madrid.jpg" alt="Shoes" />
+                        </figure>
+                        <div class="card-body flex justify-center items-center">
+                            <h2 class="card-title text-2xl font-bold">Real Madrid Home Kit</h2>
+                            <p class="text-xl">950 Taka
+                            </p>
+                            <div class="">
+                                <button class="btn btn-primary">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- third -->
+                    <div class="card bg-base-100 shadow-sm">
+                        <figure>
+                            <img src="images/AC Milan.jpg" alt="Shoes" />
+                        </figure>
+                        <div class="card-body flex justify-center items-center">
+                            <h2 class="card-title text-2xl font-bold">AC Milan Home Kit</h2>
+                            <p class="text-xl">950 Taka
+                            </p>
+                            <div class="">
+                                <button class="btn btn-primary">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fourth -->
+                    <div class="card bg-base-100 shadow-sm">
+                        <figure>
+                            <img src="images/Man city.jpg" alt="Shoes" />
+                        </figure>
+                        <div class="card-body flex justify-center items-center">
+                            <h2 class="card-title text-2xl font-bold">Man City Home Kit</h2>
+                            <p class="text-xl">950 Taka
+                            </p>
+                            <div class="">
+                                <button class="btn btn-primary">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- National Jersey  -->
+            <div class="container mx-auto mb-9">
+                <div class="mt-24 flex  flex-col items-center">
+                    <h2 class="text-4xl font-bold mb-5">Club Jersies</h2>
+                    <p class="text-xl mb-12">
+                        Get your favourite Club's Jersey in a very reasonable price and a trusted shop.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
+                    <!-- first National Jersey -->
+                    <div class="card bg-base-100 shadow-sm">
+                        <figure>
+                            <img src="images/Argentina.jpg" alt="Shoes" />
+                        </figure>
+                        <div class="card-body flex justify-center items-center">
+                            <h2 class="card-title text-2xl font-bold">Argentina World Cup kit</h2>
+                            <p class="text-xl">950 Taka
+                            </p>
+                            <div class="">
+                                <button class="btn btn-primary ">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second national jersey  -->
+                    <div class="card bg-base-100 shadow-sm">
+                        <figure>
+                            <img src="images/France.jpg" alt="Shoes" />
+                        </figure>
+                        <div class="card-body flex justify-center items-center">
+                            <h2 class="card-title text-2xl font-bold">France World Cup kit</h2>
+                            <p class="text-xl">950 Taka
+                            </p>
+                            <div class="">
+                                <button class="btn btn-primary ">Add to cart</button>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    <!-- third national jersey  -->
+                    <div class="card bg-base-100 shadow-sm">
+                        <figure>
+                            <img src="images/Spain 21_22 Home Jersey.jpg" alt="Shoes" />
+                        </figure>
+                        <div class="card-body flex justify-center items-center">
+                            <h2 class="card-title text-2xl font-bold">Spain World Cup kit</h2>
+                            <p class="text-xl">950 Taka
+                            </p>
+                            <div class="">
+                                <button class="btn btn-primary ">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- fourth national jersey -->
+                    <div class="card bg-base-100 shadow-sm">
+                        <figure>
+                            <img src="images/portugal.jpg" alt="Shoes" />
+                        </figure>
+                        <div class="card-body flex justify-center items-center">
+                            <h2 class="card-title text-2xl font-bold">Poetugal World Cup kit</h2>
+                            <p class="text-xl">950 Taka
+                            </p>
+                            <div class="">
+                                <button class="btn btn-primary ">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
